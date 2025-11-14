@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Moisture</title>
+  <style>
+    /* ---------- Basic Reset ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ---------- Body ---------- */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(180deg, #e8f5e9, #f1f8e9);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* ---------- Container ---------- */
+    .container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid #dcedc8;
+      transition: all 0.3s ease;
+    }
+
+    /* ---------- Title ---------- */
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    /* ---------- List Styling ---------- */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      background: #f9fff9;
+      border-left: 6px solid #43a047;
+      margin: 12px 0;
+      padding: 16px 18px 16px 50px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    li::before {
+      content: "🌱";
+      position: absolute;
+      left: 16px;
+      top: 13px;
+      font-size: 1.3rem;
+    }
+
+    li:hover {
+      transform: translateY(-4px);
+      background: #e8f5e9;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ---------- Image Gallery ---------- */
+    .image-gallery {
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ---------- Responsive Design ---------- */
+    @media (max-width: 900px) {
+      .container {
+        padding: 30px;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      li {
+        font-size: 0.95rem;
+        padding: 14px 16px 14px 45px;
+      }
+
+      li::before {
+        font-size: 1.2rem;
+        top: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      .container {
+        padding: 24px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      li {
+        font-size: 0.9rem;
+        padding: 12px 14px 12px 40px;
+      }
+
+      li::before {
+        font-size: 1rem;
+        top: 9px;
+        left: 12px;
+      }
+
+      .image-gallery img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🌿 Soil Moisture — Key Points</h2>
+    <ul>
+      <li>Soil moisture is the water held within the soil's pore spaces and is crucial for agriculture, climate regulation, and predicting natural disasters like floods and droughts.</li>
+      <li>It is a dynamic variable, influenced by factors such as precipitation, soil type, and vegetation, and it directly impacts plant growth and energy exchange between land and atmosphere.</li>
+      <li><strong>Plant Growth:</strong> Proper moisture ensures that plants get enough water for photosynthesis and nutrient transport.</li>
+      <li><strong>Irrigation Management:</strong> Monitoring soil moisture helps farmers decide when and how much to irrigate, reducing water wastage.</li>
+      <li><strong>Weather and Climate Studies:</strong> Soil moisture influences temperature, humidity, and rainfall patterns.</li>
+      <li><strong>Preventing Crop Failure:</strong> Knowing soil moisture levels can help prevent drought stress or overwatering issues.</li>
+    </ul>
+
+    <!-- ---------- Image Gallery ---------- -->
+    <div class="image-gallery">
+      <img src="soil_1.jpg" alt="Soil moisture sensor">
+      <img src="soil_6.jpg" alt="Soil structure">
+      <img src="soil_3.jpg" alt="Soil moisture monitoring in agriculture">
+    </div>
+  </div>
+</body>
+</html>

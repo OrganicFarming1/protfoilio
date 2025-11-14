@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Farming Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 0;
+      margin: 0;
+      font-size: 28px;
+    }
+
+    /* Main gallery layout */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* Image grid inside each card (2x2) */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card img {
+        height: 140px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .card img {
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Organic Farming Gallery</h1>
+
+  <div class="gallery">
+
+    <div class="card">
+      <h2>Soil Preparation</h2>
+      <div class="image-grid">
+        <img src="piccsp_2.jpeg" alt="Soil Preparation">
+        <img src="soil_preparation.jpg" alt="Soil Preparation 2">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Plantation</h2>
+      <div class="image-grid">
+        <img src="piccsp_1.jpeg" alt="Plantation 1">
+        <img src="newcsppic1.jpeg" alt="Plantation 2">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Composting</h2>
+      <div class="image-grid">
+        <img src="soil_cycle.jpg" alt="Composting 1">
+        <img src="soil_composting.jpg" alt="Composting 2">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Natural Fertilizers</h2>
+      <div class="image-grid">
+        <img src="natural_frerti.jpg" alt="Natural Fertilizers 1">
+        <img src="natur_feertilizer.jpg" alt="Natural Fertilizers 2">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Irrigation Methods</h2>
+      <div class="image-grid">
+        <img src="irriga_methods.png" alt="Irrigation Methods 1">
+        <img src="irrigation.jpg" alt="Irrigation Methods 2">
+        <img src="new irrigation1.jpg">
+        <img src="new irrigation1.jpg">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Weed Management</h2>
+      <div class="image-grid">
+        <img src="weed_pic.jpg" alt="Weed Management 1">
+        <img src="weed_pic1.jpg" alt="Weed Management 2">
+        <img src="newcsppic3.jpeg">
+        <img src="new_weed.jpg">
+      
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Pest Control (Organic)</h2>
+      <div class="image-grid">
+        <img src="piccsp_17.jpeg" alt="Pest Control 1">
+        <img src="piccsp_16.jpeg" alt="Pest Control 2">
+        <img src="piccsp_19.jpeg" alt="Pest Control 3">
+        <img src="picscsp_21.jpeg" alt="Pest Control 4">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Crop Rotation</h2>
+      <div class="image-grid">
+        <img src="crop_rotation.jpg" alt="Crop Rotation 1">
+        <img src="crop_rotaion2.jpg" alt="Crop Rotation 2">
+        <img src="crop_new.jpg">
+        <img src="crop_new1.jpg">
+      
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Watering</h2>
+      <div class="image-grid">
+        <img src="piccsp_10.jpeg" alt="Watering 1">
+        <img src="piccsp_7.jpeg" alt="Watering 2">
+        <img src="piccsp_3.jpeg" alt="Watering 3">
+        <img src="piccsp_8.jpeg" alt="Watering 4">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Harvesting</h2>
+      <div class="image-grid">
+        <img src="piccsp_12.jpeg" alt="Harvesting 1">
+        <img src="piccsp_4.jpeg" alt="Harvesting 2">
+        <img src="newcspic2.jpeg">
+        <img src="harvesting.jpg">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Post-Harvest Storage</h2>
+      <div class="image-grid">
+        <img src="piccsp_13.jpeg" alt="Post Harvest Storage 1">
+        <img src="piccsp_11.jpeg" alt="Post Harvest Storage 2">
+        <img src="harvest.jpeg">
+        <img src="harverst_new.jpg">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
